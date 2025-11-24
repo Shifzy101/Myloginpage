@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login page -Abimbola</title>
+</head>
+<body>
+    <div class="login-container">
+        <form method="POST" action="/authenticate">
+            <h1>Login Page</h1>
+            <p>Sign in to access the Page</p>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input id="email" name="email" type="email" required placeholder="you@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" required placeholder="••••••••">
+            </div>
+
+            <div class="form-options">
+                <label>
+                    <input type="checkbox" name="remember">
+                    Remember me
+                </label>
+                <a href="/forgot">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn-primary">Sign In</button>
+
+            <p class="signup-link">
+                New here? <a href="/signup">Create account</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
